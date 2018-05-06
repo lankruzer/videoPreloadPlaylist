@@ -79,7 +79,8 @@ gulp.task('watch', ['build-html', 'styles', 'js', 'browser-sync'], function() {
 	gulp.watch('app/**/*.html', ['build-html']);
 	gulp.watch('app/'+syntax+'/**/*.'+syntax+'', ['styles']);
 	gulp.watch(['libs/**/*.js', 'app/js/common.js'], ['js']);
-	gulp.watch('app/*.html', browsersync.reload)
+	gulp.watch('app/*.html', browsersync.reload);
+	gulp.watch('app/css/*.css', browsersync.reload({ stream: true }))
 });
 
 gulp.task('default', ['watch']);
