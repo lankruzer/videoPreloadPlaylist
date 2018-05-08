@@ -1,0 +1,40 @@
+{
+	"files": [
+		{
+			"type":"VIDEO",
+			"sources": {
+				"webm": {
+					"source": "video/0-5.mp4",
+					"size": 1140851
+				}
+			}
+		},
+		{
+			"type":"VIDEO",
+			"sources": {
+				"webm": {
+					"source": "video/10-15.mp4",
+					"size": 725593
+				}
+			}
+		},
+		{
+			"type":"VIDEO",
+			"sources": {
+				"webm": {
+					"source": "video/20-25.mp4",
+					"size": 692511
+				}
+			}
+		},
+		{
+			"type":"VIDEO",
+			"sources": {
+				"webm": {
+					"source": "video/30-35.mp4",
+					"size": 922553
+				}
+			}
+		}
+	]
+}
