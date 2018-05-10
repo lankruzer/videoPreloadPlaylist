@@ -1,8 +1,16 @@
 @@include('./modules/_head.html' , {title:'FullVideoBgPreload'})
 
+
+<picture class="img-bg__img">
+	<source media="(min-width: 1919px)" srcset="video/4k/bg4k.png">
+	<source media="(min-width: 1281px)" srcset="video/fullHd/bgFullHd.png">
+	<img class="" src="video/hd/bgHD.png">
+</picture>
+
+
 <div class="videos"></div>
 
-<canvas id="c2"></canvas>
+<canvas id="c1"></canvas>
 
 <div data-simplebar data-simplebar-auto-hide="false" class="wrapper">
 	<div class="wrapper-content">

@@ -20,7 +20,7 @@ body
 	font-family: $default-font
 	overflow-x: hidden
 	color: $text
-	background: linear-gradient(to right, #3A1EF4, #FF137B)
+	//background: linear-gradient(to right, #3A1EF4, #FF137B)
 	* :not(video)
 		position: relative
 		z-index: 5
@@ -45,16 +45,33 @@ body
 b, strong
 	font-weight: bold
 
-.videos
-	position: absolute
+#c1
+	position: fixed
 	top: 0
 	left: 0
-	width: 100%
-	height: 100%
-	overflow: hidden
+	z-index: 4
+	width: 50%
+	height: 50%
+
+.videos
+	position: fixed
+	top: 00px
+	right: 50%
+	width: 50%
+	height: auto
+	z-index: 3
 
 	video
-		position: absolute
+		position: fixed
+		top: 0
+		right: 0
+		z-index: 10
+		//min-width: 100%
+		height: 50%
+		width: 50%
+		//transform: translateY(-50%)
+
+	//	position: absolute
 		top: 50%
 		right: 0
 		z-index: 5
@@ -64,6 +81,8 @@ b, strong
 		width: auto
 		height: auto
 		transform: translate(0, -50%)
+
+
 
 .video-control
 	position: fixed
@@ -128,10 +147,12 @@ h1
 	font-size: 67px
 	font-weight: 100
 
-
-
-
-
+picture
+	position: fixed
+	top: 0
+	left: 0
+	width: 100%
+	height: 100%
 
 
 @import "media" // Always at the end
