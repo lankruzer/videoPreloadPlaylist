@@ -41,7 +41,6 @@ gulp.task('styles', function() {
 gulp.task('js', function() {
 	return gulp.src([
 		'app/libs/jquery/dist/jquery.min.js',
-		'app/libs/jquery.html5loader/src/jquery.html5Loader.min.js',
 		'app/libs/simplebar/dist/simplebar.js',
 		'app/js/common.js', // Always at the end
 		])
